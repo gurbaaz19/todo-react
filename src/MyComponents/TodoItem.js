@@ -8,5 +8,6 @@ export const TodoItem = ({todo, onDelete}) => {
             onDelete(todo)
         }}>Delete
         </button>
+    <hr/>
     </div>)
 }
