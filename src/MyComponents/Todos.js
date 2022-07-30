@@ -1,6 +1,10 @@
 import React from "react";
+import {TodoItem} from "./TodoItem";
 
-export const Todos = () => {
+export const Todos = (props) => {
     return (
-        <div>Todos Works !!!</div>
+        <div className="container">
+            <h3>To-Do List</h3>
+            <TodoItem todo={props.todos[0]}/>
+        </div>
     )}
