@@ -2,7 +2,9 @@ import './App.css';
 import {Header} from "./MyComponents/Header";
 import {Todos} from "./MyComponents/Todos";
 import {Footer} from "./MyComponents/Footer";
-import {useState} from "react";
+import {addTodo} from "./MyComponents/TodoItem";
+import React, {useState} from "react";
+import {AddTodo} from "./MyComponents/AddTodo";
 
 function App() {
 
@@ -12,6 +14,10 @@ function App() {
         setTodos(todos.filter((item) => {
             return item !== todo;
         }))
+    }
+
+    const onAdd = (title,desc) => {
+        console.log("Add", title,desc);
     }
 
     const [todos, setTodos] = useState([{
@@ -26,6 +32,7 @@ function App() {
 
     return (<>
         <Header title="To-Do List" searchBar={true}/>
+        <AddTodo onAdd={onAdd}/>
         <Todos todos={todos} onDelete={onDelete}/>
         <Footer/>
     </>);
