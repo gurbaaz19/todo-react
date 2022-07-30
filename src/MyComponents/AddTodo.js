@@ -9,7 +9,7 @@ export const AddTodo = (props) => {
             alert("Please enter the Title and Description");
             return;
         }
-        props.onAdd({title, desc});
+        props.onAdd(title, desc);
     }
     return (<div className="container my-3">
         <h3>Add To-Do</h3>
