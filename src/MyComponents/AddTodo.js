@@ -10,6 +10,8 @@ export const AddTodo = (props) => {
             return;
         }
         props.onAdd(title, desc);
+        setTitle("");
+        setDesc("");
     }
     return (<div className="container my-3">
         <h3>Add To-Do</h3>
