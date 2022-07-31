@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "//gurbaaz19.github.io/todo-react/static/css/main.0a41f4ae.css",
-    "main.js": "//gurbaaz19.github.io/todo-react/static/js/main.67f47bf4.js",
+    "main.js": "//gurbaaz19.github.io/todo-react/static/js/main.c94554a6.js",
     "static/js/787.7b5a45f4.chunk.js": "//gurbaaz19.github.io/todo-react/static/js/787.7b5a45f4.chunk.js",
     "index.html": "//gurbaaz19.github.io/todo-react/index.html",
     "main.0a41f4ae.css.map": "//gurbaaz19.github.io/todo-react/static/css/main.0a41f4ae.css.map",
-    "main.67f47bf4.js.map": "//gurbaaz19.github.io/todo-react/static/js/main.67f47bf4.js.map",
+    "main.c94554a6.js.map": "//gurbaaz19.github.io/todo-react/static/js/main.c94554a6.js.map",
     "787.7b5a45f4.chunk.js.map": "//gurbaaz19.github.io/todo-react/static/js/787.7b5a45f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a41f4ae.css",
-    "static/js/main.67f47bf4.js"
+    "static/js/main.c94554a6.js"
   ]
 }
