@@ -4,7 +4,7 @@ import {Todos} from "./MyComponents/Todos";
 import {Footer} from "./MyComponents/Footer";
 import React, {useEffect, useState} from "react";
 import {AddTodo} from "./MyComponents/AddTodo";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {HashRouter, Route, Routes} from "react-router-dom";
 import {About} from "./MyComponents/About";
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
     }, [todos]);
 
     return (<>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter>
             <Header title="To-Do List" searchBar={false}/>
             <Routes>
                 <Route exact path="/" element={<><AddTodo onAdd={onAdd}/>
@@ -54,7 +54,7 @@ function App() {
                 <Route exact path={"/about"} element={<About/>}/>
             </Routes>
             <Footer/>
-        </BrowserRouter>
+        </HashRouter>
     </>);
 }
 
